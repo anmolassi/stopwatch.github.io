@@ -9,8 +9,8 @@ let milli = 0;
 let sec = 0;
 let min = 0; // for minutes
 let hour = 0; // for hours
-let pauseTime = true;
-let count = 0;
+let pauseTime = true; // to provide functionality to the pause button
+let count = 0; // to give logic to the lap button for knowing when to perform lap operation. 
 // to pause the timer
 pause.addEventListener("click", function () {
   pauseTime = true;
@@ -45,6 +45,8 @@ lap.addEventListener("click", function () {
     }
   }
 });
+
+//main function which is continously updating the visuals of the stopwatch
 setInterval(function () {
   if (!pauseTime) {
     milliseconds++;
