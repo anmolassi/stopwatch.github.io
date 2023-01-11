@@ -61,3 +61,30 @@ body{
 #lap-container div span{
     color: red;
 }
+h1{
+    color: red;
+    font-size: 3vw;
+}
+@media screen and (max-width:900px){
+    #time{
+        font-size: 13vw;
+    }
+    .button, .button:hover{
+        width:13vw;
+        margin-bottom: 3vh;
+        font-size: 3.5vw;
+    }
+    #btn-container{
+        flex-direction: column;
+    }
+    #labels{
+        font-size: 3.5vw;
+        width:53.9vw;
+    }
+    h1{
+        font-size: 7vw;
+    }
+    #lap-container{
+        font-size: 5vw;
+    }
+}
